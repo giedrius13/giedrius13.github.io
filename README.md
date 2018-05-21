@@ -1,1 +1,6 @@
-# giedrius13.github.io
+# Restaurant - First coded website 
+
+## Technologies
+* HTML5
+* CSS3
+* jQuery
