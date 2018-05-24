@@ -1,0 +1,1093 @@
+/*   
+Theme Name: VCS Starter
+Theme URI: http://www.vilniuscoding.lt/
+Description: VCS Wordpress Theme
+Author: Mindaugas Degutis
+Author URI: http://www.degutis.lt
+Version: 1.0
+Text Domain: vcs-starter
+Domain Path: /languages
+*/
+
+/* Used Colors:
+----------section 1----------
+footer navigation:                color: #fff;    font: GentiumBookBasic Bold;         font-size: 21px;
+footer middle white text:         color: #fff;    font: YesevaOne;                     font-size: 90px;
+footer button text color:         color: #fff;    font: Lato Regular;                  font-size: 18px;
+top-icons:                        color: #dab33e; font: font awesome;                  font-size: 20px;
+
+----------section 2----------
+pagrindinis auksinis uzrasas:     color: #cc9900; font: YesevaOne;                     font-size: 36px;
+p juodas tekstas:                 color: #4c4c4c; font: Lato Regular;                  font-size: 16px;
+
+----------section 3----------
+pagrindinis baltas uzrasas:       color: #fff;    font: YesevaOne;                     font-size: 36px;
+p baltas tekstas:                 color: #fff;    font: Lato Regular;                  font-size: 16px;
+
+----------section 4----------
+h3 pagrindiniai auksiniai:        color: #cc9900; font: YesevaOne;                     font-size: 36px;
+h4 auksiniai uzrasai:             color: #c89f2d; font: Lato Regular;                  font-size: 21px;
+special staciakampiu tekstas:     color: #f8fafa; font: Lato Regular;                  font-size: 14px;
+special staciakampiu fono spalva: color: #c89f2d;
+liniju spalva:                    color: neaiski;
+p juodas tesktas:                 color: #4c4c4c; font: Lato Regular;                  font-size: 16px;
+
+----------section 5----------
+pagrindinis baltas tekstas:       color: #fff;    font: YesevaOne;                     font-size: 36px;
+p baltas tekstas:                 color: #dde0df; font: GentiumBookBasic Bold;         font-size: 25px;
+uzrasas "food inc, new york":     color: #fff;    font: Lato Regular;                  font-size: 18px;
+pilkos kabutes:                   color: #f2f4f4; font: Georgia;                       font-size: 96px;
+
+----------section 6----------
+pagrindinis auksinis uzrasas:     color: #cc9900; font: YesevaOne;                     font-size: 36px;
+p juodas tektas:                  color: #4c4c4c; font: Lato Regular;                  font-size: 16px;
+auksinis tekstas virs formu:      color: #c9a131; font: OpenSans Bold;                 font-size: 14px;
+pilkas tekstas formose:           color: #7c7c7c; font: OpenSans Italic;               font-size: 16px;
+kalendorius ir rodykle zemyn:                   ; font: font awesome;
+auksinio mygtuko tekstas:         color: #fff;    font: OpenSans;                      font-size: 16px;
+auksinio mygtuko fono spalva:     color: #c89f2d;
+----------section 7---------- 
+pagrindinis baltas tekstas:       color: #fefefe; font: YesevaOne;                     font-size: 21px;
+p neparyskintas tekstas:          color: #fff;    font: OpenSans;                      font-size: 16px;
+p paryskintas tekstas:            color: #fff;    font: OpenSans Bold;                 font-size: 16px;
+
+*/
+
+/* css reset nuo cia*/
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* css reset iki cia*/
+
+footer {
+  background-color: #191919;
+}
+
+footer h3 {
+  color: #fefefe; 
+  font-family: 'Yeseva One', cursive;                     
+  font-size: 21px;
+  padding: 50px 0 20px 0;
+}
+
+footer .img {
+  margin-bottom: 20px;
+}
+
+h1, h3, h5 {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Yeseva One', cursive;
+  font-size: 90px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: 'Yeseva One', cursive;
+  font-size: 20px;
+  color: #fff;
+}
+
+h4 {
+  font-family: 'Yeseva One', cursive;
+  font-size: 21px;
+  color: #cc9900;
+}
+
+h5 {
+  font-family: 'Yeseva One', cursive;
+  font-size: 36px;
+  color: #cc9900;
+}
+
+/*--fonts pradzia--*/
+.lato_regular_font {
+  font-family: 'Lato', sans-serif;
+}
+
+.open_sans_font {
+ font-family: 'Open Sans', sans-serif; 
+}
+
+/*--fonts pabaiga--*/
+
+
+/*--fonts colors pradzia--*/
+.lato_black {
+  color: #4c4c4c;
+}
+
+.lato_white {
+  color: #fff;
+}
+
+/*--fonts colors pabaiga--*/
+
+/*--flex--*/
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-stretch {
+  align-self: stretch;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.max-width-h1 {
+  max-width: 960px;
+  margin: 0 auto; 
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.display-none {
+  display: none;
+}
+
+.first_section_shadow_back {
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+}
+    
+/* sekcija 1 */
+
+header ul a:hover {
+  background-color: rgba(0,0,0, .5);
+}
+
+header nav {
+  align-self: center;
+}
+
+.first_section_background {
+  background-image: url("../images/background_nr1.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.navitems {
+ color: #fff;
+ padding: 21px;
+ font-family: 'Gentium Book Basic', serif;
+ font-size: 21px;
+ font-weight: bold;
+}
+
+.logo {
+  padding: 10px;
+}
+
+.top-icons {
+  color: #dab33e;
+  font-size: 20px;
+  margin:0 7px;
+}
+
+.black_button {
+  background-color: rgba(0,0,0, .5);
+  border: 0.5px solid #000;
+  margin-right: 15px; 
+} 
+
+.white_button {
+  background-color:rgba(255,255,255, 0.2);
+  border: 0.5px solid #fff;
+  margin-left: 15px;
+}
+
+.mygtukas {
+  display: inline-block;
+  padding: 20px 50px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  min-width: 230px;
+}
+
+.buttons_div {
+  text-align: center;
+}
+
+.chevron-hero {
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.9);
+  padding-bottom: 20px;
+  -webkit-animation: pulsate 3s ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.3;
+}
+
+/*.chevron-hero apacion rodykles css animacija */
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+/* sekcija 2*/
+
+.pattern {
+  background-image: url(../images/pattern.png);
+}
+
+.left-align-block,
+.right-align-block {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.left-align-block{
+  width: 40%;
+}
+
+.right-align-block {
+    display: flex;
+    justify-content: center;
+    width: 60%; 
+}
+
+.right-align-block img{
+   margin-top:60px;
+   align-self: center;
+}
+
+.cook-center {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.antros-sekcijos-centravimas {
+  max-width:1040px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.center-antros-sekcijos-teksta {
+  text-align: center;
+}
+
+.cook-center img {
+  transform: translateX(16%);
+}
+
+.just-the-right-food {
+  margin: 0 auto;
+  padding: 100px 30px 30px 30px;
+  color: #cc9900;
+  text-align: center;
+  font-family: 'Yeseva One', cursive;
+  font-size: 36px; 
+}
+
+/* sekcija 3 */
+
+.third_section_background {
+  background-image: url("../images/background_nr3.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.ingridientu_juodas_fonas {
+  text-align:center;
+  align-self: center;
+  max-width: 670px;
+  background-color: rgba(0,0,0, .5);
+  padding: 80px 80px 70px 80px;
+  width: 85%;
+}
+
+.max-width {
+  max-width: 415px;
+}
+
+.juodo-fono-lygiavimas {
+  margin: 40px;
+}
+
+.padding_atitraukimas {
+  padding-top:50px;
+  justify-content: space-between;
+}
+
+.ingridientu_juodas_fonas h3 {
+  font-size: 36px;
+}
+
+.ingridientu_juodas_fonas img {
+  margin: 15px 0 20px 0;
+}
+
+.ingridientu_juodas_fonas img:first-child {
+  margin-left: 12px;
+}
+
+.ingridientu_juodas_fonas img:last-child {
+  margin-right: 12px;
+}
+
+/*.ingridientu_juodas_fonas p {
+  line-height: 1.5;
+}*/
+
+/* sekcija 4 */
+
+.block-100proc-width {
+  display: block;
+  width: 100%;  
+}
+
+.section4_background {
+  background-image: url(../images/pattern.png);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bendras_patiekalo_div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(204, 153, 0, .3);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+  padding: 5px 0;
+}
+
+.section4_right_padding {
+  padding-right: 80px;
+  padding-bottom: 60px;
+  padding-top: 110px;
+}
+
+.section4_left_padding {
+  padding-left: 80px;
+  padding-bottom: 60px;
+  padding-top: 110px;
+}
+
+.section4_right_padding h3, .section4_left_padding h3 {
+  color: #cc9900;
+  font-size: 36px;
+}
+
+.section4_right_padding p, .section4_left_padding p {
+  color: #4c4c4c;
+  font-family: 'Lato', sans-serif;
+}
+
+.dish_bottom_padding {
+  padding-bottom: 30px;
+}
+
+/*Saslyku section 5 */
+
+.guest_reviews_main_p_text {
+  font-family: 'Gentium Book Basic', serif;
+  color: #dde0df;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.7;
+}
+
+div.juodas_penktos_sekcijos_background h3 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: normal;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.flexbox_juodam_fonui {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.saslyku_background {
+  background-image: url("../images/background_nr4.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row-reverse;
+  min-height: 100vh;
+}
+
+.juodas_penktos_sekcijos_background {
+  width: 770px;
+  min-height: 560px;
+  background-color: rgba(0,0,0, .8);
+  padding: 0 70px;
+}
+
+/*penktos sekcijos kabutes */
+.juodas_penktos_sekcijos_background > div {
+  position: relative;
+}
+
+.juodas_penktos_sekcijos_background > div::before{
+  content: open-quote;
+  display: block;
+  position: absolute;
+  top: -30px;
+  left: -40px;
+  font-size: 90px;
+  color: rgba(242, 244, 244, 0.7);
+}
+/*penktos sekcijos kabutes */
+.food-inc {
+  margin-top: 40px;
+  font-size: 18px;
+
+}
+    
+/* Sesta sekcija */
+
+.sekcijos6-back1, .sekcijos6-back2 {
+  background-image: url(../images/reservations_image2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 15%;
+  max-width: 50%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.sekcijos6-back2 {
+  background-image: url(../images/reservations_image1.jpg);
+}
+
+.sixth_section_width_right {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 53%;
+}
+
+.sixth_section_width_left {
+  flex-basis: 39%;
+}
+
+.sixth_section_background {
+  background-image: url(../images/pattern.png);
+  padding: 100px;
+}
+
+label, input {
+  display: block;
+}
+
+label {
+  color: #c9a131;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.input-fields {
+  width: 200px;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.select-padding {
+  padding: 4px;
+}
+
+div.input-fields > select {
+  padding: 4px;
+}
+
+.book-now-button {
+  width: 200px;
+  padding: 7px;
+  background-color: #c9a131;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  border: none;
+}
+
+.book-now-div {
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+*:focus {
+  outline: none;
+}
+
+::placeholder, select { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #7c7c7c;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    opacity: 1; /* Firefox */
+}
+
+.lygiavimas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input-label-div {
+  padding-bottom: 20px;
+}
+
+/*.top_p_text, .bottom_p_text {
+  line-height: 1.5;
+}*/
+
+.bottom_p_text {
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.sixth_section_width_left > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Footer */
+
+.footer-align-center-divs {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 1040px;
+  margin: auto;
+  padding-bottom: 70px;
+}
+
+.footer-smaller-text {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+span .footer-bold-text {
+  font-weight: bold;
+}
+
+.footer_icons {
+  color: #fff;
+  font-size: 16px;
+  padding: 0 5px;
+}
+
+.footer-pirmas {
+   flex-basis: 31.7%;
+   justify-content: flex-start;
+}
+
+.footer-antras {
+   flex-basis: 20%;
+   justify-content: center;
+}
+.footer-trecias {
+   flex-basis: 18.5%;
+   justify-content: flex-end;
+}
+
+.footer-bold-ptext {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.footer-2ndcol-bottom-padding {
+  padding-bottom: 50px;
+}
+
+footer p {
+  line-height: 1.5;
+}
+
+/*burgerio  navigacijos naikinimas*/
+.burger-nav {
+  display: none;
+}
+/*burgerio  navigacijos naikinimas*/
+
+
+/*bandymas su responsive */
+@media (max-width: 800px) {
+  
+  /* pirma hero sekcija */
+  .max-width-h1 h1 {
+    font-size: 4vh;
+  }
+
+  div.buttons_div {
+    display: none;
+  }
+  /* antra sekcija cook */
+  .left-align-block {
+    max-width: 100%; 
+  }
+
+  .just-the-right-food {
+    padding: 30px 0 20px 0;
+    font-size: 27px;
+  }
+
+  .right-align-block {
+    display: none;
+  }
+
+  .left-align-block {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .cook-center {
+    width: 50%;
+  }
+
+  .cook-center img {
+    transform: translateX(90%);
+  }
+
+  /* sekcija 3 Fine ingridients */
+  .ingridientu_juodas_fonas {
+    padding: 0;
+    width: 100%; 
+  }
+  .ingridientu_juodas_fonas h3 {
+    font-size: 25px;
+    color: tomato;
+    padding-top: 20px;
+  }
+
+  .juodo-fono-lygiavimas {
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .ingridientu_juodas_fonas img:first-child {
+    margin: 0;
+    display: none;
+  }
+  
+  /* ketvirta sekcija meniu */
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .section4_right_padding, .section4_left_padding {
+    padding: 20px 20px 30px 20px;
+  }
+
+  /* 5 sekcija saslyku */
+  .juodas_penktos_sekcijos_background {
+    min-height: 80vh;
+    width:auto;
+    background-color: rgba(0,0,0, .6);
+    padding: 0 40px;
+  }
+  div.juodas_penktos_sekcijos_background > h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .juodas_penktos_sekcijos_background > div::before {
+    font-size: 60px;
+    top: -30px;
+    left: -30px;
+  }
+  .guest_reviews_main_p_text {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .food-inc {
+    font-size: 18px;
+    color: tomato;
+  }
+
+  /*sesta sekcija */
+  div.sixth_section_width_right {
+    display: none;
+  }
+
+  div.sixth_section_width_left {
+    flex-basis: 100%;
+  }
+
+  .sixth_section_background {
+    padding: 20px;
+  }
+
+  .lygiavimas {
+  justify-content: center;
+  }
+
+  .input-fields {
+    width: 270px;
+  }
+  /*footer sekcija */
+  footer 
+  footer p {
+    font-size: 5vw;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  footer h3 {
+    font-size: 6vw;
+    padding: 20px 0 10px 0;
+    color: tomato;
+  }
+
+  footer .img {
+    margin-bottom: 10px;
+  }
+
+  .footer-icons {
+    font-size: 25px;
+  }
+
+  .footer-pirmas, .footer-antras, .footer-trecias {
+    flex-basis: 100%;
+  }
+
+  .footer-align-center-divs {
+    flex-wrap: wrap;
+  }
+
+  .footer-2ndcol-bottom-padding {
+    padding-bottom: 20px;
+  }
+
+  /*------------------------------------------------------- */
+  /*------------------------------------------------------- */
+  /* nuo cia burgeris */
+  .burger-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    height: 40px;
+    width: 100%;
+    /*background: url(../images/pattern.png) no-repeat 98% center;*/
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  header .wrapper {
+    width: 100%;
+    padding: 0;
+  }
+  
+  header nav ul {
+    overflow: hidden;
+    background: #505050;
+    height: 0;
+  }
+  
+  header nav ul.open {
+    height: auto;
+  }
+
+  header nav ul li {
+    float: none;
+    text-decoration: left;
+    width: 100%;
+    margin: 0;
+  }
+
+  header nav ul li a {
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #404040;
+    display: block;
+    margin: 0;
+  }
+  
+  /*iki cia burgeris */
+
+}
+
+
+
+/*cia dar nieko nera */
+
+@media (min-width: 801px) and (max-width: 1099) {
+  /* pirma hero sekcija */
+  .max-width-h1 h1 {
+    font-size: 4vh;
+  }
+
+  div.buttons_div {
+    display: none;
+  }
+  /* antra sekcija cook */
+  .left-align-block {
+    max-width: 100%; 
+  }
+
+  .just-the-right-food {
+    padding: 30px 0 20px 0;
+    font-size: 27px;
+  }
+
+  .right-align-block {
+    display: none;
+  }
+
+  .left-align-block {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .cook-center {
+    width: 50%;
+  }
+
+  .cook-center img {
+    transform: translateX(90%);
+  }
+
+  /* sekcija 3 Fine ingridients */
+  .ingridientu_juodas_fonas {
+    padding: 0;
+    width: 100%; 
+  }
+  .ingridientu_juodas_fonas h3 {
+    font-size: 25px;
+    color: tomato;
+    padding-top: 20px;
+  }
+
+  .juodo-fono-lygiavimas {
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .ingridientu_juodas_fonas img:first-child {
+    margin: 0;
+    display: none;
+  }
+  
+  /* ketvirta sekcija meniu */
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .section4_right_padding, .section4_left_padding {
+    padding: 20px 20px 30px 20px;
+  }
+
+  /* 5 sekcija saslyku */
+  .juodas_penktos_sekcijos_background {
+    min-height: 80vh;
+    width:auto;
+    background-color: rgba(0,0,0, .6);
+    padding: 0 40px;
+  }
+  div.juodas_penktos_sekcijos_background > h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .juodas_penktos_sekcijos_background > div::before {
+    font-size: 60px;
+    top: -30px;
+    left: -30px;
+  }
+  .guest_reviews_main_p_text {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .food-inc {
+    font-size: 18px;
+    color: tomato;
+  }
+
+  /*sesta sekcija */
+  div.sixth_section_width_right {
+    display: none;
+  }
+
+  div.sixth_section_width_left {
+    flex-basis: 100%;
+  }
+
+  .sixth_section_background {
+    padding: 20px;
+  }
+
+  .lygiavimas {
+  justify-content: center;
+  }
+
+  .input-fields {
+    width: 270px;
+  }
+  /*footer sekcija */
+  footer 
+  footer p {
+    font-size: 5vw;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  footer h3 {
+    font-size: 6vw;
+    padding: 20px 0 10px 0;
+    color: tomato;
+  }
+
+  footer .img {
+    margin-bottom: 10px;
+  }
+
+  .footer-icons {
+    font-size: 25px;
+  }
+
+  .footer-pirmas, .footer-antras, .footer-trecias {
+    flex-basis: 100%;
+  }
+
+  .footer-align-center-divs {
+    flex-wrap: wrap;
+  }
+
+  .footer-2ndcol-bottom-padding {
+    padding-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
