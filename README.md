@@ -1,7 +1,10 @@
 ### Giedrius Bacevičius
+### Projects
 
+![demo](projects_hero_pages_images/restaurant_hero_page.jpg)
 ### Restaurant - First coded website
-website: giedrius13.github.io
+[restaurant](giedrius13.github.io)
+
 
 #### Technologies (github.io site)
 * HTML5
@@ -14,4 +17,4 @@ website: giedrius13.github.io
 * WordPress 
 
 
-![demo](projects_hero_pages_images/restaurant_hero_page.jpg)
+
