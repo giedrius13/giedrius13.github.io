@@ -3,7 +3,7 @@
 
 ![demo](projects_hero_pages_images/restaurant_hero_page.jpg)
 ### Restaurant - First coded website
-[restaurant](giedrius13.github.io)
+[restaurant](https://giedrius13.github.io)
 
 
 #### Technologies (github.io site)
