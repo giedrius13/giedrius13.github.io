@@ -14,4 +14,4 @@ website: giedrius13.github.io
 * WordPress 
 
 
-![demo](project_hero_image/hero_page.jpg)
+![demo](projects_hero_pages_images/restaurant_hero_page.jpg)
